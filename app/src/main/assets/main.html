@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script language="JavaScript">
+                const toastMessageJSON = JSON.stringify({
+                    function: 'showToastMessage',
+                    params: {
+                        message: 'Call Native Toast From Web'
+                    }
+                });
+        </script>
+    </head>
+    <body>
+        <h2>WebView</h2>
+        <br/>
+
+        <button onclick="javascript:window.native.postMessage(toastMessageJSON)">Toast Message</button>
+        <br/>
+    </body>
+</html>
